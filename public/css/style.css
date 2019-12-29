@@ -1,0 +1,677 @@
+/* Ici, votre style sera écrit */
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+#header{
+    z-index: 500;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all ease;
+}
+#container_header {
+    height: 100%;
+    width: 73%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+.logo{
+    height: auto;
+    width: 100px;
+}
+#logo_container {
+    height: 45px;
+    width: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/logo/logo.png");
+}
+#first_page{
+    position: relative;
+    height:100vh;
+    width: 100%;
+    background-image: url("../img/background/robot.png");
+    background-size: cover;
+    background-position: center;
+}
+#slogan{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+
+
+#sur_titre_slogan{
+    color: white;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+#titre_slogan{
+    color: white;
+    text-transform: uppercase;
+    font-size: 45.3px;
+    font-weight: 700;
+}
+
+#sous_titre_slogan{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+#container_hr {
+    position: absolute;
+    top: 0;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 73%;
+}
+#container_scroll{
+    position: absolute;
+    bottom: -8px;
+    left: 25%;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    transform-origin: left;
+}
+#hrscroll{
+    width: 20vh;
+    height: 2px;
+    background-color:white;
+    border: none;
+}
+#txt_scroll{
+    color: white;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+#hr1{
+    position: absolute;
+    top: 0;
+    left: 49%;
+    height:100vh;
+    width: 1px;
+    background-color:#707070;
+    opacity: 0.22;
+    border: none;
+ }
+#hr2{
+    position: absolute;
+    top: 0;
+    left: 66%;
+    height:100vh;
+    width: 1px;
+    background-color:#707070;
+    opacity: 0.22;
+    border: none;
+}
+#hr3{
+    position: absolute;
+    top: 0;
+    left: 83%;
+    height:100vh;
+    width: 1px;
+    background-color:#707070;
+    opacity: 0.22;
+    border: none;
+}
+#hr4{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height:100vh;
+    width: 1px;
+    background-color:#707070;
+    opacity: 0.22;
+    border: none;
+}
+.liens{
+    right: -17%;
+    position: absolute;
+    margin-left: 17%;
+    width: 85%;
+    height:100%;
+    display: flex;
+}
+.container_liens{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.lien_menu{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    text-align:right;
+
+}
+#barre_de_recherche{
+    color: white;
+    width: 50%;
+    background-color: inherit;
+    border: none;
+    border-bottom: solid 1px white;
+    text-align: right;
+    transition: 0.2s all ease;
+    padding: 0 5px 1px;
+}
+#barre_de_recherche:hover{
+    width: 60%;
+}
+#barre_de_recherche:focus{
+    width: 60%;
+}
+#ok {
+    display: none;
+}
+
+.lien_profil{
+    justify-content: center;
+}
+
+.lien_user{
+    height: 2vh;
+    width: 2vh;
+    border-radius: 500px;
+    background-image: url("../img/user/user.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*** FIN FIRST PAGE ***/
+
+#content {
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/background/black.png");
+}
+#container_content{
+    padding-top: 15vh;
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+}
+#comu{
+    width:20%;
+    height: auto;
+}
+#container_comment{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_comment{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text_comment{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.comment{
+    width: 90%;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+.titre_comu{
+    padding: 7vh 0;
+    display: flex;
+    justify-content: center;
+}
+.titre_comu span{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+}
+#divisions{
+    width: 66%;
+    padding-bottom: 20px;
+}
+.titre_division span{
+    color: white;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+}
+.titre_division span::before{
+    content:"";
+    position: absolute;
+    left: -2%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 120%;
+    width: 50px;
+    background-color: #FF0059;
+}
+.titre_division span::after{
+    content:"LES";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50px;
+}
+.titre_division{
+    padding: 5vh 0  ;
+}
+.divison_serie_les_mieux_notees{
+    padding-bottom: 10vh;
+}
+.content_division{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item_division{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 24%;
+}
+.item_division a{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 0.2s all ease;
+    position: relative;
+    overflow: hidden;
+ }
+.item_division_hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-image: linear-gradient(to right bottom, rgba(255, 0, 89, 0.4),   rgba(244, 63, 169, 0.4), rgba(195, 115, 230, 0.4), rgba(120, 153, 255, 0.4), rgba(0, 178, 255, 0.4));
+    transition: 0.2s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_division_hover span{
+   padding: 5px 15px;
+    border: solid 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease;
+}
+.item_division_hover span:hover{
+    background-color: white;
+    color: black;
+    mix-blend-mode:screen ;
+}
+
+.item_division:hover .item_division_hover{
+    top:0;
+}
+
+.item_division a:hover{
+     transform: scale(1.05);
+ }
+.item_division a img{
+    height: 100%;
+}
+.item_division span{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+/*** Login Page ***/
+
+#container_form{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/background/robot.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#content_form {
+    position: absolute;
+    top: 0;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 73%;
+    display: flex;
+    align-items: center;
+
+}
+
+#form_login{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#email{
+    width: 100%;
+    margin-bottom: 5vh;
+    background: inherit;
+    border: none;
+    border-bottom: solid 2px white;
+    color: white;
+    padding: 1% 2%;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.2s all ease;
+}
+#email:hover{
+    width: 110%;
+}
+#email:focus{
+    width: 110%;
+}
+
+#password{
+    width: 100%;
+    margin-bottom: 5vh;
+    background: inherit;
+    border: none;
+    border-bottom: solid 2px white;
+    color: white;
+    padding: 1% 2%;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.2s all ease;
+}
+#password:hover{
+    width: 110%;
+}
+#password:focus{
+    width: 110%;
+}
+.btn_login{
+    width: 48%;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
+    padding: 2% 2%;
+    color: black;
+    mix-blend-mode:screen ;
+    transition: 0.2s all ease;
+    cursor: pointer;
+    margin-bottom: 5vh;
+}
+
+.btn_login:hover{
+    width: 52%;
+}
+
+#inscription{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+#inscription a{
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    text-decoration: underline;
+}
+
+#password-confirm{
+    width: 100%;
+    margin-bottom: 5vh;
+    background: inherit;
+    border: none;
+    border-bottom: solid 2px white;
+    color: white;
+    padding: 1% 2%;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.2s all ease;
+}
+#password-confirm:hover{
+    width: 110%;
+}
+#password-confirm:focus{
+    width: 110%;
+}
+
+#name{
+    width: 100%;
+    margin-bottom: 5vh;
+    background: inherit;
+    border: none;
+    border-bottom: solid 2px white;
+    color: white;
+    padding: 1% 2%;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.2s all ease;
+}
+#name:hover{
+    width: 110%;
+}
+#name:focus{
+    width: 110%;
+}
+
+/*** 404 ***/
+.container_404{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/background/robot.png");
+    background-size: cover;
+    background-position: center;
+}
+.content_404{
+    width: 73%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.items_404{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}
+
+#erreur{
+    font-size: 150px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
+
+#qcq{
+    font-size: 200px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.content_series {
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/background/black.png");
+}
+.container_content_series{
+    padding-top: 15vh;
+    width: 73%;
+}
+
+.container_form{
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container_form form{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+#selection{
+    height: 100%;
+    width: 70%;
+    margin: 0 15px;
+    background-color: inherit;
+    color: white;
+    border: none;
+    border-bottom:solid 2px white;
+    transition: 0.5s all ease;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+#selection:hover{
+    background-color: white;
+    color: black;
+    mix-blend-mode: screen;
+    outline: none;
+}
+#selection:focus{
+    background-color: white;
+    color: black;
+    mix-blend-mode: screen;
+    outline: none;
+}
+
+
+
+
+
+.btn_selection{
+    height: 3vh;
+    margin: 0 15px;
+    background-color: inherit;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 2% 2%;
+    transition: 0.2s all ease;
+    cursor: pointer;
+    color: white;
+}
+
+.liste_series{
+    margin-top: 10vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-around ;
+    flex-wrap: wrap;
+}
+
+.carte_serie{
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carte_serie a{
+    position: relative;
+}
+.carte_serie p{
+    margin-top: 1vh;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.profil_header{
+    margin-left: 100px;
+}
+.serie_division_hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-image: linear-gradient(to right bottom, rgba(255, 0, 89, 0.4),   rgba(244, 63, 169, 0.4), rgba(195, 115, 230, 0.4), rgba(120, 153, 255, 0.4), rgba(0, 178, 255, 0.4));
+    transition: 0.2s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serie_division_hover span{
+    padding: 5px 15px;
+    border: solid 1px white;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease;
+    text-decoration: none;
+    color: white;
+}
+.serie_division_hover span:hover{
+    background-color: white;
+    color: black;
+    mix-blend-mode:screen ;
+}
+
+.lien_serie_liste:hover .serie_division_hover{
+    top:0;
+}
+
+.lien_serie_liste a:hover{
+    transform: scale(1.05);
+}
+
+.lien_serie_liste {
+    overflow: hidden;
+}
+

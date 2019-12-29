@@ -1,0 +1,456 @@
+body{
+    background: url('../img/background/black.png');
+}
+
+.container{
+    width: 73%;
+    margin: 0 auto;
+}
+
+
+.serie_show{
+    padding-top: 180px;
+    color: white;
+
+}
+
+.serie_img_affiche{
+    width: 34%;
+}
+
+.serie_top_infos{
+
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.serie_infos_name{
+    width: 51%;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.serie_top_infos_name{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.serie_checkbox{
+
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.serie_btn_vue{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+input[type='checkbox']{
+    position: absolute;
+    left: -9999px;
+}
+input:checked + label{
+    background-color: red;
+}
+
+.carre_rose{
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    background-color: #FF0059;
+    z-index: 10;
+    left : -10px
+}
+
+.serie_mid_infos{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carre_rose_mid{
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    background-color: #FF0059;
+    z-index: 10;
+    left : -5px
+}
+
+.serie_mid_infos_name{
+    position: relative;
+}
+
+.serie_synopsis_titre{
+    z-index: 20;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.serie_synopsis_text{
+    font-size: 18px;
+}
+.serie_mid_infos_synopsis{
+    width: 34%;
+}
+
+.serie_mid_infos_avis{
+    width: 51%;
+}
+
+
+.serie_mid_notes{
+    margin: 10px 0 ;
+    font-size: 12px;
+}
+
+
+.note > span{
+    font-weight: 700;
+}
+
+
+.serie_form_commentaire{
+    width: 49%;
+
+}
+
+.textarea_serie_commentaire{
+    resize: none;
+    width: 100%;
+}
+
+.btn_saison{
+    width: 100px;
+    text-align: center;
+    height: 33px;
+    border:2px solid white
+
+}
+
+
+.serie_nom_serie{
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+    z-index: 20;
+}
+.container{
+    width: 73%;
+    margin: 0 auto;
+}
+
+
+.serie_show{
+    padding-top: 180px;
+    color: white;
+
+}
+
+.serie_img_affiche{
+    width: 34%;
+}
+
+.serie_top_infos{
+
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.serie_infos_name{
+    width: 51%;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.serie_top_infos_name{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.serie_checkbox{
+
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.serie_btn_vue{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+input[type='checkbox']{
+    position: absolute;
+    left: -9999px;
+}
+input:checked + label{
+    background-color: red;
+}
+
+.carre_rose{
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    background-color: #FF0059;
+    z-index: 10;
+    left : -10px
+}
+
+.serie_mid_infos{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carre_rose_mid{
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    background-color: #FF0059;
+    z-index: 10;
+    left : -5px
+}
+
+.serie_mid_infos_name{
+    position: relative;
+}
+
+.serie_synopsis_titre{
+    z-index: 20;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.serie_mid_infos_synopsis{
+    width: 34%;
+}
+
+.serie_mid_infos_avis{
+    width: 51%;
+}
+
+
+.serie_mid_notes{
+    margin: 10px 0 ;
+    font-size: 12px;
+}
+
+
+.note > span{
+    font-weight: 700;
+}
+
+
+.serie_form_commentaire{
+    width: 49%;
+    color: white;
+
+}
+
+.textarea_serie_commentaire{
+    resize: none;
+    width: 100%;
+    height: 200px;
+    background-color: inherit;
+    border: none;
+
+}
+
+
+hr.serie_info{
+    margin: 50px 0;
+}
+
+.bottom_form_comment{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.serie_form_commentaire{
+    border: 2px solid white;
+    margin: 20px 0;
+    color: white;
+}
+
+#note_serie{
+    border: none;
+    background-color: inherit;
+    color: white;
+}
+
+.btn_envoi_form_commentaire{
+    border: white 2px solid;
+    border-bottom: none;
+    border-right: none;
+    background-color: inherit;
+    color: white;
+    height: 30px;
+    font-weight: 800;
+
+}
+
+.serie_top_genre{
+    align-self: flex-end;position: absolute;
+    font-size: 14px;
+    position: relative;
+}
+
+.noms_genre{
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    z-index: 20;
+}
+
+.carre_rose_genre{
+    position: absolute;
+    width: 8px;
+    height: 20px;
+    background-color: #FF0059;
+    z-index: 10;
+    left : -3px
+}
+
+.container_page_serie {
+    width: 73%;
+    margin: 0 auto;
+
+}
+
+
+.playerYoutube{
+    width: 100%;
+    align-self: baseline;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.playerYoutube > iframe{
+    width: 100%;
+    z-index: 10;
+    height: auto;
+    background: #000;
+;
+}
+
+
+.nomdelapersonne{
+    font-size: 60px;
+    font-weight: 800;
+    text-align: right;
+}
+
+.saisonall{
+    margin: 50px 0;
+
+    display: flex;
+    flex :wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.episode{
+    text-align: center;
+    font-size: 12px;
+}
+
+.btn_saison{
+    margin: 100px 0 0 0;
+    width: 33%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.saison_item{
+    margin: 10px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.lien_epi{
+    color:white;
+    text-decoration: none;
+}
+.img_episode{
+    width: 100%;
+    text-align: center;
+
+}
+
+.img_episode > img{
+    width: 50%;
+}
+
+.container_white{
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn-success{
+    color: white;
+    text-decoration: none;
+    font-size:15px;
+}
+
+.textarea_serie_commentaire{
+    color: white;
+}
+#comment{
+    margin-top: 1vh ;
+}
+
+#datecom{
+    margin-bottom: 1vh  ;
+}
